@@ -26,15 +26,15 @@
       </figure>
     </div>
 
-    <nav>
+    <nav class="nav">
       <ul class="navlist">
         <li class="list-header">Product <i>
           <picture>
-            <source media="(min-width:300px)" srcset="./images/icon-arrow-dark.svg" >
-            <source media="(min-width:768px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:300px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:768px)" srcset="./images/icon-arrow-dark.svg" >
             <img src="./images/icon-arrow-light.svg" alt="dropdown icon"></i>
           </picture>
-          <ul class="sub-list">
+          <ul class="sub-list none">
             <li><a href="#">Overview</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Marketplace</a></li>
@@ -44,10 +44,11 @@
         </li>
         <li class="list-header">Company<i>
           <picture>
-            <source media="(min-width:300px)" srcset="./images/icon-arrow-dark.svg" >
-            <source media="(min-width:768px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:300px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:768px)" srcset="./images/icon-arrow-dark.svg" >
             <img src="./images/icon-arrow-light.svg" alt="dropdown icon"></i>
-          <ul class="sub-list">
+          </picture>
+          <ul class="sub-list none">
             <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -56,10 +57,11 @@
         </li>
         <li class="list-header">Connect <i>
           <picture>
-            <source media="(min-width:300px)" srcset="./images/icon-arrow-dark.svg" >
-            <source media="(min-width:768px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:300px)" srcset="./images/icon-arrow-light.svg" >
+            <source media="(min-width:768px)" srcset="./images/icon-arrow-dark.svg" >
             <img src="./images/icon-arrow-light.svg" alt="dropdown icon"></i>
-          <ul class="sub-list">
+          </picture>
+          <ul class="sub-list none">
             <li><a href="#">Contact</a></li>
             <li><a href="#">Newsletter</a></li>
             <li><a href="#">LinkedIn</a></li>
@@ -68,16 +70,17 @@
       </ul>
       
       <div class="cta">
+        <hr>
         <button class="btn">Login</button>
         <button class="btn active">Sign Up</button>
       </div>
     </nav>
 
     <div class="hamburger">
-      <img src="./images/icon-hamburger.svg" class="none" alt="menu icon">
-      <img src="./images/icon-close.svg"  alt="menu icon">
+      <img class="menuIcon" src="./images/icon-hamburger.svg"  alt="menu icon">
+      <img class="closeIcon none" src="./images/icon-close.svg"  alt="menu icon">
+  
     </div>
-
       <!-- Hero -->
       <section class="hero">
         <h1>A modern publishing platform</h1>
@@ -91,10 +94,10 @@
 
   </header>
 
-  <main class="none">
+  <main >
 
   <!-- Introduction -->
-    <article class="none">
+    <article >
       <h2>Designed for the future</h2>
       <section class="intro">
         <div class="intro__left">
@@ -123,7 +126,7 @@
      <!--x Introduction x-->
 
        <!-- service  -->
-       <article class="none">
+       <article >
         <section class="services">
           <div class="services__left">
             <figure>
@@ -164,7 +167,7 @@
        <!--x tools x-->
   </main>
   <!-- footer -->
-  <footer class="none">
+  <footer >
     <div class="footer__grid-1">
       <div class="logo">
         <figure>  
@@ -208,5 +211,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="script.js"></script>
 </body>
 </html>
