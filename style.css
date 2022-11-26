@@ -118,6 +118,7 @@ header .cta {
 
   display: flex;
   gap: 20px;
+  margin-top: 10px;
 }
 
 
@@ -130,14 +131,14 @@ header .navlist .list-header:hover {
     cursor: pointer;
 }
 
-
 header .list-header .sub-list.active {
     background: var(--White-text);
     color: black;
     text-align: justify;
     padding: 10px;
     margin: 10px 0px 0px;
-    /* display: none; */
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 header .navlist .list-header .sub-list li {
@@ -162,6 +163,14 @@ header .hero .cta .btn {
     background: transparent;
     font-size: 1rem;
     color: var(--White-text);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+header .hero .cta .btn:hover {
+    color: var(--Very-light-red-CTA-hover-background);
+    background: var(--White-text);
+
 }
 
 header .cta .btn.active ,
@@ -172,8 +181,15 @@ header .hero .cta .btn.active {
     border-radius: 37%;
     color: var(--Light-red-CTA-text);
     font-weight: bolder;
+    transition: all .3s ease;
+    cursor: pointer;
 
 }
+header .cta .btn.active:hover ,
+header .hero .cta .btn.active:hover {
+ background: var(--Very-light-red-CTA-hover-background);
+ color: var(--White-text);
+} 
 
 header .hero {
     grid-column: 1 / -1;
@@ -330,8 +346,9 @@ footer {
     grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
     background: var(--Very-dark-black-blue-footer-background);
     place-items:  start center;
-    padding: 20px 0px;
+    padding: 25px 0px;
     margin-top: 30px;
+    border-top-right-radius: 15%;
 }
 
 footer .footer__grid-1 .logo img {
@@ -364,8 +381,15 @@ footer .footer__grid-4 ul li a {
     color: var(--White-text);
     font-size: 1rem;
     text-align: justify;
+    transition: all.3s ease;
+    cursor: pointer;
 }
 
+footer .footer__grid-2 ul li a:hover,
+footer .footer__grid-3 ul li a:hover,
+footer .footer__grid-4 ul li a:hover {
+    text-decoration: underline;
+}
 /* **  Footer */
 
 
@@ -383,8 +407,12 @@ header nav {
     display: none;
 }
 
+hr {
+    margin: 15px 0px;
+}
+
 header nav.active {   
-    padding: 10px 0px;
+    padding: 30px 0px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -396,22 +424,24 @@ header nav.active {
     transform: translate(-50%, -50%);
     height: auto;
     box-shadow: -10px 10px 20px rgba(0,0,0,0.3);
+    z-index: 200;
 }
 header nav .navlist .list-header{
     color: black;
     font-weight: 500;
+    text-align: center;
 }
 
-header .list-header .sub-list.active,
-header .list-header:first-child .sub-list{
+header .list-header .sub-list.active{
     background: var(--Grayish-blue-footer-text-);
     display: flex;
     flex-direction: column;
-    gap: 20px;
     margin: 10px 0px;
     align-items: center;
     justify-content: center;
     padding: 20px 5px;
+    width: calc(100vw - 50vw);
+    box-shadow: none;
 }
 header .sub-list li a{
    color: black;
@@ -419,6 +449,10 @@ header .sub-list li a{
 }
 
 header nav .navlist {
+    flex-direction: column;
+}
+
+header .cta {
     flex-direction: column;
 }
 
@@ -431,9 +465,7 @@ header .cta .btn.active {
     background: linear-gradient(to right, var(--Very-light-red), var(--Light-red)) center / cover no-repeat;
     color: var(--White-text);
     width: 6rem;
-    border-radius: 35%;
-    padding: 4px;
-    width: 130px;
+    margin: 0 auto;
 }
 
 header .hero h1{
