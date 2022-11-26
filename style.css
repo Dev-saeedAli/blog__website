@@ -397,6 +397,7 @@ footer .footer__grid-4 ul li a:hover {
 @media screen and (max-width: 768px) {
     /* || Header */
 header {
+    padding: 20px 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: calc(100vh - 10vh);
@@ -483,7 +484,7 @@ header .hero p {
 }
 
 header .hamburger {
-    display: block;
+    display: flex;
 }
 /* ***** Header ***** */
 
@@ -511,7 +512,7 @@ main .intro .intro__left h3 {
 main .intro .intro__right {
     order: 0;
     grid-column: 1 / -1;
-    transform: translateX(0px);
+    transform: translateX(50px);
 }
 
 main .intro .intro__right img {
@@ -569,7 +570,7 @@ main .tools {
 }
 
 main .tools .tools__left {
-    transform: translateX(0px); 
+    transform: translateX(-40px); 
 }
 
 main .tools .tools__left img {
