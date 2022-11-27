@@ -50,7 +50,7 @@ body {
 
 .offset {
     position: absolute;
-    left: 125rem;
+    left: -20000px;
 }
 
 .container {
