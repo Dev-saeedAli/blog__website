@@ -179,11 +179,12 @@ header .hero .cta .btn.active {
     background: var(--White-text);
     padding: 0.625rem;
     font-size: .9rem;
-    border-radius: 37%;
+    border-radius: 30%;
     color: var(--Light-red-CTA-text);
     font-weight: bolder;
     transition: all .3s ease;
     cursor: pointer;
+    width: 130px;
 
 }
 header .cta .btn.active:hover ,
