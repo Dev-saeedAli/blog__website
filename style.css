@@ -519,6 +519,7 @@ main .intro .intro__right {
 
 main .intro .intro__right img {
     width: 100vw;
+    transform: translateX(-50px);
 }
 /* x main x */
 
@@ -578,6 +579,7 @@ main .tools .tools__left {
 main .tools .tools__left img {
     width: 100vw;
     margin: 1.25rem 0rem 0.625rem;
+    transform: translateX(50px);
 }
 
 main .tools .tools__right {
